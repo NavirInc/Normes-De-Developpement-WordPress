@@ -1,34 +1,40 @@
-# NORMES DE DÉVELOPPEMENT - WORDPRESS
+# DEVELOPMENT STANDARDS - WORDPRESS
 
-Nous souhaitons livrer à nos clients des sites web « lean » qui sont en d’autres mots, rapides, faciles à modifier et faciles à maintenir sur le long terme. Pour faciliter l’entretient de plusieurs sites sur le long terme, nous désirons qu’ils soient, dans la mesure du possible, programmés de façon uniforme. Ces désirs impact évidemment le choix des technologies et des méthodes de travail.
-L’objectif de ce guide est donc de fournir des directives claires au programmeur.
+We aim to deliver lean websites to our clients, which means they should be fast, easy to edit, and easy to maintain over the long term. To facilitate the maintenance of multiple sites in the long term, we want them to be programmed uniformly, as much as possible. These desires obviously impact the choice of technologies and working methods.
 
-## THÈME WORDPRESS
-Le thème WordPress est programmé sur mesure à partir du thème de départ Launchpad. Ce thème est développé à l’interne et il est entre autres inspiré du thème underscores. Launchpad et les indications pour l’utiliser sont disponibles ici : [Lunchpad](https://github.com/NavirInc/Launchpad)
+The goal of this guide is therefore to provide clear guidelines to the programmer.
 
-## LANGAGES DE PROGRAMMATION
-Le thème doit être développé, dans la mesure de ce qui est raisonnable, en utilisant les langages HTML, CSS et Javascript dans leur forme de base, sans l'utilisation de frameworks ou de bibliothèques supplémentaires.
+## WORDPRESS THEME
+The WordPress theme is custom-built based on the Launchpad starter theme. This starter theme is developed internally and is inspired, among other things, by the [underscores](https://underscores.me/) theme. 
 
-Certaines fonctionnalités peuvent toutefois justifier l'utilisation de bibliothèques tierces. Cependant, ces bibliothèques doivent être bien établies, avoir un historique de mises à jour et être approuvées par l'agence.
+Launchpad and instructions for its use are available here: [Lunchpad](https://github.com/NavirInc/Launchpad)
 
-Le code doit exclusivement être en anglais (commentaires, variables, classes, etc.).
+No visual builders are used.
+
+## PROGRAMMING LANGUAGES
+The theme should be developed, to the extent that is reasonable, using vanilla HTML, CSS, and Javascript without the use of additional frameworks or libraries.
+
+Certain features, however, may justify the use of third-party libraries. These libraries must be well-established, have a history of updates, and be approved by the agency.
+
+All code must be exclusively in English (comments, variables, classes, etc.).
 
 ### HTML
-Utiliser les balises sémantiques.
+Use semantic HTML tags.
 
 ### CSS
-La feuille de style CSS est programmée en utilisant Sass et en suivant les principes ci-bas.
+The CSS stylesheet is programmed using Sass and following the principles below.
 
-[CSS Naming Convention](css-naming-convention.md)
+[Our CSS Naming Convention](css-naming-convention.md)
 
-L’utilisation de librairie tel que Boostrap ou Tailwind est proscrite.
+The use of libraries such as Bootstrap or Tailwind is prohibited.
 
+Compress - TBD
 
 ### Javascript
-
+Compress - TBD
 
 ## EXTENSIONS WORDPRESS
-Le recours à des extensions tierces est réduit au minimum. Par défaut, les extensions suivantes sont utilisées :
+The use of third-party extensions is minimized. By default, the following extensions are used:
 - **Meta Box AIO** (premium) – MetaBox.io
 - **SEOPress Pro** (premium) – The SEO Guys at SEOPress
 - **Classic Editor** – Contributeurs WordPress
@@ -36,54 +42,64 @@ Le recours à des extensions tierces est réduit au minimum. Par défaut, les ex
 - **Flamingo** – Takayuki Miyoshi
 - **Beautiful and responsive cookie consent** (premium) - Beautiful Cookie Banner
 
-Selon le besoin, les extensions suivantes peuvent être utilisées :
+As needed, the following extensions can be used:
 - **Polylang** – WP SYNTEX
 
-Si des extensions supplémentaires sont nécessaires, elles devront être approuvées par l’agence avant leurs utilisations.
+If additional extensions are needed, they must be approved by the agency before use.
 
 
 ## PERFORMANCE
-Nous visons un site qui respecte les standards établis en termes de performance, de référencement et d’accessibilité.
-À moins d’exception, le site doit obtenir des résultats de 100% dans l’audit Ligthouse de Google.
-SEO
+We aim for a site that adheres to established standards in terms of performance, accessibility, best pratices and SEO. Unless otherwise specified, the site must achieve 100% scores in Google Lighthouse audits.
 
-### Accessibilité
+
+### Accessibility
 Le site doit respecter les bonnes pratiques en terme d'accessibilité.
 
-### Compatibilité
-Le site doit être supporté par tous les navigateurs principaux en utilisation aujourd’hui. Le support pour les anciens navigateurs tel qu’Internet Explorer n’est cependant pas requis.
+### Compatibility
+The site must be supported by all major browsers in current use today. Support for older browsers such as Internet Explorer is not required.
 
 ### Responsive
-Le site doit être esthétique sur l’ensemble des écrans, il doit donner l’impression d’avoir été conçu pour l’écran sur laquelle il est affiché, peu importe ça largeur.
-Comme les différentes sections d’un site s’adaptent différemment aux largeurs d’écran, des « breakpoints » différents peuvent être spécifiées pour chacune d’elles.
+The site should look aesthetically pleasing on all screens, giving the impression that it was designed for the screen it is displayed on, regardless of its width.
+
+Since different sections of a site adapt differently to screen widths, different breakpoints can be specified for each of them.
 
 ### Animations
-Les animations sont programmées à l’aide des librairies GSAP.
+Animations are programmed using the GSAP library.
 
-### Images
+### Pictures
 #### SVG
-Lorsque possible, les éléments graphiques (logo, icone, texture, forme, etc.) doivent être servies en format vectoriel (SVG) pour assurer un rendu net.
+When possible, graphic elements (logo, icon, texture, shape, etc.) must be served in vector format (SVG) to ensure clear rendering.
 
 #### WEBP
-Les photos et images doivent être servie en format WEBP.
-JPEG fallback?
+Photos and images must be served in WEBP format.
 
-[Article 1 - Stackoverflow](https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp)
+Further consideration
 
-[Article 2 - Kinsta](https://kinsta.com/blog/wordpress-image-sizes/)
+JPEG fallback? Deliver scaled image?
 
-### Police
-Lorsque possible, les polices utilisées doivent être comprise dans le thème pour être hébergé sur le serveur.
+[htaccess: deliver jpg or png if browser does not accept webP](https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp)
 
-## CONTRÔLE DES VERSIONS DU CODE
-La gestion des versions du code doit être assuré sur un répertoire Git sur GitHub. Le développeur est responsable de commettre son code à intervalle régulier pour assurer un contrôle des versions efficaces et, le cas échéant, faciliter la collaboration.
-Dans certain cas, l’agence peut contribuer au développement de certaines fonctionnalités précises tel que l’intégration de code de suivi. Le développeur en sera alors avisé.
+[Wordpress image sizes](https://kinsta.com/blog/wordpress-image-sizes/)
 
-### Déploiement automatique
-[Article 1 - felipeelia](https://felipeelia.dev/ftp-no-more-deploying-wordpress-sites-with-github-actions/)
+### Fonts
+Whenever possible, the fonts used should be included in the theme for hosting on the server.
 
-## DISTRIBUTION DES RÔLES
-### Agence
+## CODE REPOSITORY
+Code version control must be managed using a Git repository on GitHub. Developers are responsible for committing their code at regular intervals to ensure effective version control and, where applicable, facilitate collaboration.
+
+The code repository will be created by the agency.
+
+In some cases, the agency may contribute to the development of specific features, such as integrating tracking code. The developer will be notified accordingly.
+
+### Automatic deployment
+Currently, the agency does not use automatic deployment.
+
+For further consideration :
+
+[FTP No More: Deploying WordPress sites with GitHub Actions](https://felipeelia.dev/ftp-no-more-deploying-wordpress-sites-with-github-actions/)
+
+## ROLES DISTRIBUTION
+### Agency
 Avant le début du mandat, l’agence fournira au développeur les éléments suivants.
 - Serveur de développement avec accès administrateur (Hébergement, FTP, PHPmyadmin, etc.)
 - Installation Wordpress avec extensions installées
@@ -101,13 +117,9 @@ Après le développement, l’agence sera responsable des tâches suivantes :
 - Redirection des anciens URL
 - Mise en ligne du site web sur le serveur du client
 
-### Développeur
+### Web developer
 Le développeur est responsable des tâches suivantes :
 - Programmation du Thème personnalisé
-
-
-
-
 
 ### Files handling
 
