@@ -3,7 +3,8 @@ We utilize a combination of BEM (Block, Element, Modifier) and namespaced CSS, m
 
 This guide is inspired by the work of Harry Roberts and his two articles:
 
-(https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/){:target="_blank"}
+https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
+
 https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
 ## CLASSES VS ID

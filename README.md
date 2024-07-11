@@ -21,11 +21,11 @@ La feuille de style CSS doit être programmée en suivant les principes ci-bas. 
 
 [CSS Naming Convention](css-naming-convention.md)
 
-[Article 1 - york](https://www.york.ac.uk/pattern-library/about/css.html target="_blank")
+[Article 1 - york](https://www.york.ac.uk/pattern-library/about/css.html)
 
-[Article 2 - csswizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/ target="_blank")
+[Article 2 - csswizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
 
-[Article 3 - csswizardry](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/ target="_blank")
+[Article 3 - csswizardry](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 ### Javascript
 
@@ -71,9 +71,9 @@ Lorsque possible, les éléments graphiques (logo, icone, texture, forme, etc.) 
 Les photos et images doivent être servie en format WEBP.
 JPEG fallback?
 
-[Article 1 - Stackoverflow](https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp){:target="_blank"}
+[Article 1 - Stackoverflow](https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp)
 
-[Article 2 - Kinsta](https://kinsta.com/blog/wordpress-image-sizes/){:target="_blank"}
+[Article 2 - Kinsta](https://kinsta.com/blog/wordpress-image-sizes/)
 
 ### Police
 Lorsque possible, les polices utilisées doivent être comprise dans le thème pour être hébergé sur le serveur.
@@ -83,7 +83,7 @@ La gestion des versions du code doit être assuré sur un répertoire Git sur Gi
 Dans certain cas, l’agence peut contribuer au développement de certaines fonctionnalités précises tel que l’intégration de code de suivi. Le développeur en sera alors avisé.
 
 ### Déploiement automatique
-[Article 1 - felipeelia](https://felipeelia.dev/ftp-no-more-deploying-wordpress-sites-with-github-actions/){:target="_blank"}
+[Article 1 - felipeelia](https://felipeelia.dev/ftp-no-more-deploying-wordpress-sites-with-github-actions/)
 
 ## DISTRIBUTION DES RÔLES
 ### Agence
