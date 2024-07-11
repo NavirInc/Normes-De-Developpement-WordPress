@@ -89,6 +89,8 @@ We separate classes used for Javascript hooks from CSS classes. This means they 
 
 To enhance the development experience and simplify the stylesheet, we use the Sass extension language.
 
+Here is an example of using the convention with Sass :
+
 
 ```
 .c-parent {
@@ -106,7 +108,7 @@ To enhance the development experience and simplify the stylesheet, we use the Sa
 }
 ```
 
-Become :
+This code will be compiled into this code:
 
 ```
 .c-parent {
@@ -121,3 +123,11 @@ Become :
   height: auto;
 }
 ```
+
+
+### File handling
+The *style.scss* file must be placed in the *src/scss* folder. The compiled and compressed file, *style.min.css*, should be placed in the base folder of the theme.
+
+To compile and minify the style.scss file, use this command in the theme folder.
+
+```sass src/scss/style.scss style.min.css --style compressed --no-source-map```
