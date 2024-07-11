@@ -20,7 +20,7 @@ All code must be exclusively in English (comments, variables, classes, etc.).
 Use semantic HTML tags.
 
 ### CSS
-The CSS stylesheet is written using *Sass* and following the principles in this [CSS Naming Convention](css-naming-convention.md). The use of libraries such as Bootstrap or Tailwind should be avoided.
+The CSS stylesheet is written using Sass and following the principles in this [CSS Naming Convention](css-naming-convention.md). The use of libraries such as Bootstrap or Tailwind should be avoided.
 
 The *style.scss* file must be placed in the *src/scss/* folder. The file is then compiled, minified and placed in the theme's base folder using the command below.
 
