@@ -42,8 +42,8 @@ The main JavaScript file is placed in the *src/js/* folder. The file is then min
 ####  Approved libraries
 These JavaScript libraries can be used.
 
-[GSAP](https://gsap.com/) (premium) - Animation 
-[Splide](https://splidejs.com/) - Slider/carousel
+- [**GSAP**](https://gsap.com/) (premium) - Animation 
+- [**Splide**](https://splidejs.com/) - Slider/carousel
 
 
 ## EXTENSIONS WORDPRESS
@@ -57,7 +57,7 @@ The use of third-party extensions is minimized. By default, the following extens
 
 As needed, the following extensions can be used:
 - **Polylang** – WP SYNTEX
-- **Woocommerce** - Automattic
+- **WooCommerce** - Automattic
 
 If additional extensions are needed, they must be approved by the agency.
 
@@ -124,4 +124,3 @@ After development, the agency will be responsible for the following tasks :
 The developer is responsible for the following tasks:
 - Programming the custom theme
 - Performance optimization
-
