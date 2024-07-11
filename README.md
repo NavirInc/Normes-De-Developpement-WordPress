@@ -5,9 +5,7 @@ We aim to deliver lean websites to our clients, which means they should be fast,
 The goal of this guide is therefore to provide clear guidelines to the programmer.
 
 ## WORDPRESS THEME
-The WordPress theme is custom-built based on the Launchpad starter theme. This starter theme is developed internally and is inspired, among other things, by the [underscores](https://underscores.me/) theme. 
-
-Launchpad and instructions for its use are available here: [Lunchpad](https://github.com/NavirInc/Launchpad)
+The WordPress theme is custom-built based on the [Lunchpad](https://github.com/NavirInc/Launchpad) starter theme. This starter theme is developed internally and is inspired, among other things, by the [underscores](https://underscores.me/) theme. 
 
 No visual builders are used.
 
