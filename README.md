@@ -12,9 +12,9 @@ Launchpad and instructions for its use are available here: [Lunchpad](https://gi
 No visual builders are used.
 
 ## PROGRAMMING LANGUAGES
-The theme should be developed, to the extent that is reasonable, using vanilla HTML, CSS, and Javascript without the use of additional frameworks or libraries.
+The theme should be developed, to the extent that is reasonable, using vanilla HTML, CSS, and JavaScript without the use of additional frameworks or libraries.
 
-Certain features, however, may justify the use of third-party libraries. These libraries must be well-established, have a history of updates, and be approved by the agency.
+Certain features, however, may justify the use of third-party libraries. These libraries must be well established, have a history of updates, and be approved by the agency.
 
 All code must be exclusively in English (comments, variables, classes, etc.).
 
@@ -22,16 +22,29 @@ All code must be exclusively in English (comments, variables, classes, etc.).
 Use semantic HTML tags.
 
 ### CSS
-The CSS stylesheet is writen using Sass and following the principles in this [CSS Naming Convention](css-naming-convention.md). The use of libraries such as Bootstrap or Tailwind is prohibited.
+The CSS stylesheet is written using *Sass* and following the principles in this [CSS Naming Convention](css-naming-convention.md). The use of libraries such as Bootstrap or Tailwind should be avoided.
 
-The *style.scss* file must be placed in the *src/scss* folder. The file is then compiled and minified using the command below and placed in the theme's base folder.
+The *style.scss* file must be placed in the *src/scss/* folder. The file is then compiled, minified and placed in the theme's base folder using the command below.
 
 ```sass src/scss/style.scss style.min.css --style compressed --no-source-map```
 
-### Javascript
-Compress - TBD
+*Both files are uploaded to the server.*
 
-The use of jQuery is prohibited.
+### JavaScript
+The use of jQuery and other frameworks should be avoided. Some library for specific functionality may be used with the agency's approbation.
+
+The main JavaScript file is placed in the *src/js/* folder. The file is then minified and placed in the *assets/js/* folder using the command below.
+
+```terser src/js/main.js --output assets/js/main.min.js --compress --mangle```
+
+*Both files are uploaded to the server.*
+
+####  Approved libraries
+These JavaScript libraries can be used.
+
+[GSAP](https://gsap.com/) (premium) - Animation 
+[Splide](https://splidejs.com/) - Slider/carousel
+
 
 ## EXTENSIONS WORDPRESS
 The use of third-party extensions is minimized. By default, the following extensions are used:
@@ -44,19 +57,17 @@ The use of third-party extensions is minimized. By default, the following extens
 
 As needed, the following extensions can be used:
 - **Polylang** – WP SYNTEX
+- **Woocommerce** - Automattic
 
-If additional extensions are needed, they must be approved by the agency before use.
+If additional extensions are needed, they must be approved by the agency.
 
-## Files handling
-
-TBD
 
 ## PERFORMANCE
-We aim for a site that adheres to established standards in terms of performance, accessibility, best pratices and SEO. Unless otherwise specified, the site must achieve 100% scores in Google Lighthouse audits.
+We aim for a site that adheres to established standards in terms of performance, accessibility, best practices and SEO. Unless otherwise specified, the site must achieve 100% scores in Google Lighthouse audits.
 
 
 ### Accessibility
-Le site doit respecter les bonnes pratiques en terme d'accessibilité.
+The site must adhere to best practices in terms of accessibility.
 
 ### Compatibility
 The site must be supported by all major browsers in current use today. Support for older browsers such as Internet Explorer is not required.
@@ -66,21 +77,14 @@ The site should look aesthetically pleasing on all screens, giving the impressio
 
 Since different sections of a site adapt differently to screen widths, different breakpoints can be specified for each of them.
 
-### Animations
-Animations are programmed using the GSAP library.
 
 ### Pictures
 #### SVG
-When possible, graphic elements (logo, icon, texture, shape, etc.) must be served in vector format (SVG) to ensure clear rendering.
+When possible, graphic elements (logo, icon, texture, shape, etc.) must be served in vector format (SVG) to ensure a clear rendering.
+
 
 #### WEBP
 Photos and images must be served in WEBP format.
-
-For further consideration : JPEG fallback? Deliver scaled image?
-
-[htaccess: deliver jpg or png if browser does not accept webP](https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp)
-
-[Wordpress image sizes](https://kinsta.com/blog/wordpress-image-sizes/)
 
 ### Fonts
 Whenever possible, the fonts used should be included in the theme for hosting on the server.
@@ -95,30 +99,29 @@ In some cases, the agency may contribute to the development of specific features
 ### Automatic deployment
 Currently, the agency does not use automatic deployment.
 
-For further consideration :
 
-[FTP No More: Deploying WordPress sites with GitHub Actions](https://felipeelia.dev/ftp-no-more-deploying-wordpress-sites-with-github-actions/)
-
-## ROLES DISTRIBUTION
+## ROLE DISTRIBUTION
 ### Agency
-Avant le début du mandat, l’agence fournira au développeur les éléments suivants.
-- Serveur de développement avec accès administrateur (Hébergement, FTP, PHPmyadmin, etc.)
-- Installation Wordpress avec extensions installées
-- Répertoire Git avec thème de base
-- Librairies et licences nécessaires
-- Maquette Figma du site web complet
-- Images exportées en format WEBP et SVG
-- Textes
+At the project beginning, the agency will provide the developer with the following :
+- Development server with admin access (Hosting, FTP, PHPmyadmin, etc.)
+- WordPress installation with necessary plugins installed
+- Git repository with base theme
+- Required libraries and licenses
+- Figma mockup of the complete website
+- Images exported to WEBP and SVG formats
+- Text content
 
-Après le développement, l’agence sera responsable des tâches suivantes :
-- Configuration et intégration de Google Tag Manager
-- Configuration de Google Search Console
-- Configuration et intégration du compte SMTP
-- Intégration des Méta-titre et Méta description
-- Redirection des anciens URL
-- Mise en ligne du site web sur le serveur du client
+After development, the agency will be responsible for the following tasks :
+- Configuration and integration of Google Tag Manager
+- Configuration of Google Search Console
+- Configuration and integration of SMTP account
+- Integration of Meta titles and Meta descriptions
+- Redirection of old URLs
+- Deployment of the website on the client's server
+
 
 ### Web developer
-Le développeur est responsable des tâches suivantes :
-- Programmation du Thème personnalisé
+The developer is responsible for the following tasks:
+- Programming the custom theme
+- Performance optimization
 
