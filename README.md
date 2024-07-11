@@ -17,15 +17,12 @@ Le code doit exclusivement être en anglais (commentaires, variables, classes, e
 Utiliser les balises sémantiques.
 
 ### CSS
-La feuille de style CSS doit être programmée en suivant les principes ci-bas. L’utilisation de librairie tel que Boostrap ou Tailwind est proscrite.
+La feuille de style CSS est programmée en utilisant Sass et en suivant les principes ci-bas.
 
 [CSS Naming Convention](css-naming-convention.md)
 
-[Article 1 - york](https://www.york.ac.uk/pattern-library/about/css.html)
+L’utilisation de librairie tel que Boostrap ou Tailwind est proscrite.
 
-[Article 2 - csswizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
-
-[Article 3 - csswizardry](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 ### Javascript
 
@@ -107,3 +104,11 @@ Après le développement, l’agence sera responsable des tâches suivantes :
 ### Développeur
 Le développeur est responsable des tâches suivantes :
 - Programmation du Thème personnalisé
+
+
+
+
+
+### Files handling
+
+TBD

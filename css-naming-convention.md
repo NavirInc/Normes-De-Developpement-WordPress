@@ -3,9 +3,20 @@ We utilize a combination of BEM (Block, Element, Modifier) and namespaced CSS, m
 
 This guide is inspired by the work of Harry Roberts and his two articles:
 
-https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
+[More Transparent UI Code with Namespaces](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
 
-https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+[MindBEMding – getting your head ’round BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+
+
+The work of York's University:
+
+[York's css naming convention](https://www.york.ac.uk/pattern-library/about/css.html)
+
+
+And finaly, the work of Andy Barnes:
+
+[BEM and SASS: A Perfect Match](https://andrew-barnes.medium.com/bem-and-sass-a-perfect-match-5e48d9bc3894)
+
 
 ## CLASSES VS ID
 We exclusively use classes for applying styles, reserving IDs solely for document fragment identifiers, form/input names. IDs should not be used in our CSS.
@@ -72,3 +83,36 @@ An underscore at the start of a class name shows that we're only putting this cl
 #### Javascript `js-`
 
 We separate classes used for Javascript hooks from CSS classes. This means they are not bound together. Examples: .c-tabs also has a .js-tabs class to allow JS to apply tab behaviour.
+
+
+## SASS
+
+To enhance the development experience and simplify the stylesheet, we use the Sass extension language.
+
+
+`.c-parent {
+    margin: 3rem 0 2.5rem 0;
+
+    &__first-child {
+        width: 1.5rem;
+        height: auto;
+    }
+
+    &__second-child {
+        width: 3rem;
+        height: auto;
+    }
+}`
+
+`
+.c-parent {
+  margin: 3rem 0 2.5rem 0;
+}
+.c-parent__first-child {
+  width: 1.5rem;
+  height: auto;
+}
+.c-parent__second-child {
+  width: 3rem;
+  height: auto;
+}`
