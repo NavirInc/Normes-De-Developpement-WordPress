@@ -21,9 +21,11 @@ La feuille de style CSS doit être programmée en suivant les principes ci-bas. 
 
 [CSS Naming Convention](css-naming-convention.md)
 
-[Article 1 - york](https://www.york.ac.uk/pattern-library/about/css.html){:target="_blank"}
-[Article 2 - csswizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/){:target="_blank"}
-[Article 3 - csswizardry](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/){:target="_blank"}
+[Article 1 - york](https://www.york.ac.uk/pattern-library/about/css.html target="_blank")
+
+[Article 2 - csswizardry](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/ target="_blank")
+
+[Article 3 - csswizardry](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/ target="_blank")
 
 ### Javascript
 
@@ -68,6 +70,7 @@ Lorsque possible, les éléments graphiques (logo, icone, texture, forme, etc.) 
 #### WEBP
 Les photos et images doivent être servie en format WEBP.
 JPEG fallback?
+
 [Article 1 - Stackoverflow](https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp){:target="_blank"}
 
 [Article 2 - Kinsta](https://kinsta.com/blog/wordpress-image-sizes/){:target="_blank"}
