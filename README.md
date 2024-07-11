@@ -8,11 +8,13 @@ Le thème WordPress est programmé sur mesure à partir du thème de départ Lau
 
 ## LANGAGES DE PROGRAMMATION
 Le thème doit être développé, dans la mesure de ce qui est raisonnable, en utilisant les langages HTML, CSS et Javascript dans leur forme de base, sans l'utilisation de frameworks ou de bibliothèques supplémentaires.
+
 Certaines fonctionnalités peuvent toutefois justifier l'utilisation de bibliothèques tierces. Cependant, ces bibliothèques doivent être bien établies, avoir un historique de mises à jour et être approuvées par l'agence.
+
 Le code doit exclusivement être en anglais (commentaires, variables, classes, etc.).
 
 ### HTML
-Utiliser les balises sémantiques
+Utiliser les balises sémantiques.
 
 ### CSS
 La feuille de style CSS doit être programmée en suivant les principes ci-bas. L’utilisation de librairie tel que Boostrap ou Tailwind est proscrite.
@@ -24,19 +26,19 @@ https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
 https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
 ### Javascript
-Les animations sont programmées à l’aide des librairies GSAP
+
 
 ## EXTENSIONS WORDPRESS
 Le recours à des extensions tierces est réduit au minimum. Par défaut, les extensions suivantes sont utilisées :
-**Meta Box AIO** (premium) – MetaBox.io
-**SEOPress Pro** (premium) – The SEO Guys at SEOPress
-**Classic Editor** – Contributeurs WordPress
-**Contact Form 7** – Takayuki Miyoshi
-**Flamingo** – Takayuki Miyoshi
-**Beautiful and responsive cookie consent** (premium) - Beautiful Cookie Banner
+- **Meta Box AIO** (premium) – MetaBox.io
+- **SEOPress Pro** (premium) – The SEO Guys at SEOPress
+- **Classic Editor** – Contributeurs WordPress
+- **Contact Form 7** – Takayuki Miyoshi
+- **Flamingo** – Takayuki Miyoshi
+- **Beautiful and responsive cookie consent** (premium) - Beautiful Cookie Banner
 
 Selon le besoin, les extensions suivantes peuvent être utilisées :
-**Polylang** – WP SYNTEX
+- **Polylang** – WP SYNTEX
 
 Si des extensions supplémentaires sont nécessaires, elles devront être approuvées par l’agence avant leurs utilisations.
 
@@ -47,6 +49,7 @@ Nous visons un site qui respecte les standards établis en termes de performance
 SEO
 
 ### Accessibilité
+Le site doit respecter les bonnes pratiques en terme d'accessibilité.
 
 ### Compatibilité
 Le site doit être supporté par tous les navigateurs principaux en utilisation aujourd’hui. Le support pour les anciens navigateurs tel qu’Internet Explorer n’est cependant pas requis.
@@ -56,6 +59,7 @@ Le site doit être esthétique sur l’ensemble des écrans, il doit donner l’
 Comme les différentes sections d’un site s’adaptent différemment aux largeurs d’écran, des « breakpoints » différents peuvent être spécifiées pour chacune d’elles.
 
 ### Animations
+Les animations sont programmées à l’aide des librairies GSAP.
 
 ### Images
 #### SVG
@@ -65,7 +69,6 @@ Lorsque possible, les éléments graphiques (logo, icone, texture, forme, etc.) 
 Les photos et images doivent être servie en format WEBP.
 JPEG fallback?
 https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp
-
 
 https://kinsta.com/blog/wordpress-image-sizes/
 
