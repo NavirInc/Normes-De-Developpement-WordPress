@@ -1,6 +1,6 @@
-# DEVELOPMENT STANDARDS - WORDPRESS
+# DEVELOPMENT STANDARDS FOR WORDPRESS
 
-We aim to deliver lean websites to our clients, which means they should be fast, easy to edit, and easy to maintain over the long term. To facilitate the maintenance of multiple sites in the long term, we want them to be programmed uniformly, as much as possible. These desires obviously impact the choice of technologies and working methods.
+We aim to deliver lean websites to our clients, which means they should be fast, easy to edit, and easy to maintain over the long term. Also, to facilitate the maintenance of multiple sites, we want them to be programmed uniformly as much as possible. These desires obviously impact the choice of technologies and working methods.
 
 The goal of this guide is therefore to provide clear guidelines to the programmer.
 
@@ -22,16 +22,16 @@ All code must be exclusively in English (comments, variables, classes, etc.).
 Use semantic HTML tags.
 
 ### CSS
-The CSS stylesheet is programmed using Sass and following the principles below.
+The CSS stylesheet is writen using Sass and following the principles in this [CSS Naming Convention](css-naming-convention.md). The use of libraries such as Bootstrap or Tailwind is prohibited.
 
-[Our CSS Naming Convention](css-naming-convention.md)
+The *style.scss* file must be placed in the *src/scss* folder. The file is then compiled and minified using the command below and placed in the theme's base folder.
 
-The use of libraries such as Bootstrap or Tailwind is prohibited.
-
-Compress - TBD
+```sass src/scss/style.scss style.min.css --style compressed --no-source-map```
 
 ### Javascript
 Compress - TBD
+
+The use of jQuery is prohibited.
 
 ## EXTENSIONS WORDPRESS
 The use of third-party extensions is minimized. By default, the following extensions are used:
@@ -47,6 +47,9 @@ As needed, the following extensions can be used:
 
 If additional extensions are needed, they must be approved by the agency before use.
 
+## Files handling
+
+TBD
 
 ## PERFORMANCE
 We aim for a site that adheres to established standards in terms of performance, accessibility, best pratices and SEO. Unless otherwise specified, the site must achieve 100% scores in Google Lighthouse audits.
@@ -73,9 +76,7 @@ When possible, graphic elements (logo, icon, texture, shape, etc.) must be serve
 #### WEBP
 Photos and images must be served in WEBP format.
 
-Further consideration
-
-JPEG fallback? Deliver scaled image?
+For further consideration : JPEG fallback? Deliver scaled image?
 
 [htaccess: deliver jpg or png if browser does not accept webP](https://stackoverflow.com/questions/77886808/htaccess-deliver-jpg-or-png-if-browser-does-not-accept-webp)
 
@@ -121,6 +122,3 @@ Après le développement, l’agence sera responsable des tâches suivantes :
 Le développeur est responsable des tâches suivantes :
 - Programmation du Thème personnalisé
 
-### Files handling
-
-TBD
