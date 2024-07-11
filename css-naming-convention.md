@@ -86,8 +86,7 @@ We separate classes used for Javascript hooks from CSS classes. This means they 
 
 
 ## SASS
-### BEM and Sass
-To enhance the development experience and simplify the stylesheet, we use the Sass extension language.
+To enhance the development experience and simplify the stylesheet, we use the Sass extension language with the SCSS syntax.
 
 Here is an example of using the above naming convention with Sass :
 

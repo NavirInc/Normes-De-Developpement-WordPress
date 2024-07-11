@@ -5,7 +5,7 @@ We aim to deliver lean websites to our clients, which means they should be fast,
 The goal of this guide is therefore to provide clear guidelines to the programmer.
 
 ## WORDPRESS THEME
-The WordPress theme is custom-built based on the [Lunchpad](https://github.com/NavirInc/Launchpad) starter theme. This starter theme is developed internally and is inspired, among other things, by the [underscores](https://underscores.me/) theme. 
+The WordPress theme is custom-built based on the [Lunchpad](https://github.com/NavirInc/Launchpad) starter theme. This starter theme is developed internally and is inspired, among other things, by the [underscores](https://underscores.me/) starter theme. 
 
 No visual builders are used.
 
@@ -100,7 +100,7 @@ All theme files are committed to the Git repository and manually uploaded to the
 
 ## ROLE DISTRIBUTION
 ### Agency
-At the project beginning, the agency will provide the developer with the following :
+At the project beginning, the agency will provide the developer with the following:
 - Development server with admin access (Hosting, FTP, PHPmyadmin, etc.)
 - WordPress installation with necessary plugins installed
 - Git repository with base theme
@@ -109,7 +109,7 @@ At the project beginning, the agency will provide the developer with the followi
 - Images exported to WEBP and SVG formats
 - Text content
 
-After development, the agency will be responsible for the following tasks :
+After development, the agency will be responsible for the following tasks:
 - Configuration and integration of Google Tag Manager
 - Configuration of Google Search Console
 - Configuration and integration of SMTP account
