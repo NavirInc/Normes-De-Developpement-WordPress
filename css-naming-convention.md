@@ -90,7 +90,7 @@ We separate classes used for Javascript hooks from CSS classes. This means they 
 To enhance the development experience and simplify the stylesheet, we use the Sass extension language.
 
 
-`.c-parent {
+```.c-parent {
     margin: 3rem 0 2.5rem 0;
 
     &__first-child {
@@ -102,10 +102,9 @@ To enhance the development experience and simplify the stylesheet, we use the Sa
         width: 3rem;
         height: auto;
     }
-}`
+}```
 
-`
-.c-parent {
+```.c-parent {
   margin: 3rem 0 2.5rem 0;
 }
 .c-parent__first-child {
@@ -115,4 +114,4 @@ To enhance the development experience and simplify the stylesheet, we use the Sa
 .c-parent__second-child {
   width: 3rem;
   height: auto;
-}`
+}```
