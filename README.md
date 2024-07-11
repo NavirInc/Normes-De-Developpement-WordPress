@@ -94,8 +94,8 @@ The code repository will be created by the agency.
 
 In some cases, the agency may contribute to the development of specific features, such as integrating tracking code. The developer will be notified accordingly.
 
-### Automatic deployment
-Currently, the agency does not use automatic deployment.
+## DEPLOYMENT
+All theme files are committed to the Git repository and manually uploaded to the production server. Currently, the agency does not use automatic deployment.
 
 
 ## ROLE DISTRIBUTION
