@@ -4,8 +4,7 @@ Nous souhaitons livrer à nos clients des sites web « lean » qui sont en d’a
 L’objectif de ce guide est donc de fournir des directives claires au programmeur.
 
 ## THÈME WORDPRESS
-Le thème WordPress est programmé sur mesure à partir du thème de départ Launchpad. Ce thème est développé à l’interne et il est entre autres inspiré du thème underscores.
-Launchpad et les indications pour l’utiliser sont disponibles ici : TBD
+Le thème WordPress est programmé sur mesure à partir du thème de départ Launchpad. Ce thème est développé à l’interne et il est entre autres inspiré du thème underscores. Launchpad et les indications pour l’utiliser sont disponibles ici : [Lunchpad](https://github.com/NavirInc/Launchpad)
 
 ## LANGAGES DE PROGRAMMATION
 Le thème doit être développé, dans la mesure de ce qui est raisonnable, en utilisant les langages HTML, CSS et Javascript dans leur forme de base, sans l'utilisation de frameworks ou de bibliothèques supplémentaires.
@@ -29,15 +28,15 @@ Les animations sont programmées à l’aide des librairies GSAP
 
 ## EXTENSIONS WORDPRESS
 Le recours à des extensions tierces est réduit au minimum. Par défaut, les extensions suivantes sont utilisées :
-Meta Box – MetaBox.io
-SEOPress Pro – The SEO Guys at SEOPress
-Classic Editor – Contributeurs WordPress
-Contact Form 7 – Takayuki Miyoshi
-Flamingo – Takayuki Miyoshi
-Cookie
+**Meta Box AIO** (premium) – MetaBox.io
+**SEOPress Pro** (premium) – The SEO Guys at SEOPress
+**Classic Editor** – Contributeurs WordPress
+**Contact Form 7** – Takayuki Miyoshi
+**Flamingo** – Takayuki Miyoshi
+**Beautiful and responsive cookie consent** (premium) - Beautiful Cookie Banner
 
 Selon le besoin, les extensions suivantes peuvent être utilisées :
-Polylang – WP SYNTEX
+**Polylang** – WP SYNTEX
 
 Si des extensions supplémentaires sont nécessaires, elles devront être approuvées par l’agence avant leurs utilisations.
 
