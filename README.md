@@ -87,6 +87,9 @@ Photos and images must be served in WEBP format.
 ### Fonts
 Whenever possible, the fonts used should be included in the theme for hosting on the server.
 
+## LICENSES
+TBD
+
 ## CODE REPOSITORY
 Code version control must be managed using a Git repository on GitHub. Developers are responsible for committing their code at regular intervals to ensure effective version control and, where applicable, facilitate collaboration.
 
