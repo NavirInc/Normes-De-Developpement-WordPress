@@ -1,3 +1,6 @@
+[!WARNING]
+This document is currently under development. Suggestions for improvements are welcome.
+
 # DEVELOPMENT STANDARDS FOR WORDPRESS
 
 We aim to deliver lean websites to our clients, which means they should be fast, easy to edit, and easy to maintain over the long term. Also, to facilitate the maintenance of multiple sites, we want them to be programmed uniformly as much as possible. These desires obviously impact the choice of technologies and working methods.
@@ -7,7 +10,12 @@ The goal of this guide is therefore to provide clear guidelines to the programme
 ## WORDPRESS THEME
 The WordPress theme is custom-built based on the [Lunchpad](https://github.com/NavirInc/Launchpad) starter theme. This starter theme is developed internally and is inspired, among other things, by the [underscores](https://underscores.me/) starter theme. 
 
-No visual builders are used.
+### Componnent
+Website sections that are used or likely to be used in multiple locations must be programmed as components. This modular approach ensures code reusability, maintainability, and consistency across the site.
+
+### Visual builder
+No visual builders are used; all code is written manually to ensure full control and optimization.
+
 
 ## PROGRAMMING LANGUAGES
 The theme should be developed, to the extent that is reasonable, using vanilla HTML, CSS, and JavaScript without the use of additional frameworks or libraries.
@@ -44,7 +52,7 @@ These JavaScript libraries can be used.
 - [**Splide**](https://splidejs.com/) - Slider/carousel
 
 
-## EXTENSIONS WORDPRESS
+## WORDPRESS PLUGIN GUIDELINES
 The use of third-party extensions is minimized. By default, the following extensions are used:
 - **Meta Box AIO** (premium) – MetaBox.io
 - **SEOPress Pro** (premium) – The SEO Guys at SEOPress
