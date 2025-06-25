@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This document is currently under development. Suggestions for improvements are welcome.
+
 # Further consideration
 
 **Add SVG sanitizer**

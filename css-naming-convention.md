@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This document is currently under development. Suggestions for improvements are welcome.
+
 # CSS NAMING CONVENTIONS
 We utilize a combination of BEM (Block, Element, Modifier) and namespaced CSS, making the markup slightly more complex to write but significantly enhancing its extensibility over time.
 

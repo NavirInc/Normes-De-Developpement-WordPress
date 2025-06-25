@@ -1,4 +1,4 @@
-> [!WARNING]
+> [!CAUTION]
 > This document is currently under development. Suggestions for improvements are welcome.
 
 # DEVELOPMENT STANDARDS FOR WORDPRESS
