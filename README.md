@@ -1,5 +1,5 @@
-[!WARNING]
-This document is currently under development. Suggestions for improvements are welcome.
+> [!WARNING]
+> This document is currently under development. Suggestions for improvements are welcome.
 
 # DEVELOPMENT STANDARDS FOR WORDPRESS
 
