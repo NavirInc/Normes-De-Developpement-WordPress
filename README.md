@@ -131,4 +131,6 @@ After development, the agency will be responsible for the following tasks:
 ### Web developer
 The developer is responsible for the following tasks:
 - Programming the custom theme
+- Creating custom post types and fields
+- Integrating site content in the default language
 - Performance optimization
