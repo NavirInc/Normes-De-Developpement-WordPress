@@ -56,7 +56,6 @@ These JavaScript libraries can be used.
 The use of third-party extensions is minimized. By default, the following extensions are used:
 - **Meta Box AIO** (premium) – MetaBox.io
 - **SEOPress Pro** (premium) – The SEO Guys at SEOPress
-- **Classic Editor** – Contributeurs WordPress
 - **Contact Form 7** – Takayuki Miyoshi
 - **Flamingo** – Takayuki Miyoshi
 - **Beautiful and responsive cookie consent** (premium) - Beautiful Cookie Banner
