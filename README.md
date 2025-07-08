@@ -32,9 +32,13 @@ The CSS stylesheet is written using Sass and following the principles in this [C
 
 The *style.scss* file must be placed in the *src/scss/* folder. The file is then compiled, minified and placed in the theme's base folder using the command below.
 
-```sass src/scss/style.scss style.min.css --style compressed --no-source-map```
+```sass src/scss/style.scss style.min.css --style=compressed --no-source-map```
 
-*Both files are uploaded to the server.*
+You can also watch changes using this command.
+```sass --watch src/scss/style.scss:style.css --style=compressed --no-source-map```
+
+> [!NOTE]
+> Both files are uploaded to the server.
 
 ### JavaScript
 The use of jQuery and other frameworks should be avoided. Some library for specific functionality may be used with the agency's approbation.
@@ -43,7 +47,8 @@ The main JavaScript file is placed in the *src/js/* folder. The file is then min
 
 ```terser src/js/main.js --output assets/js/main.min.js --compress --mangle```
 
-*Both files are uploaded to the server.*
+> [!NOTE]
+> Both files are uploaded to the server.
 
 ####  Approved libraries
 These JavaScript libraries can be used.
