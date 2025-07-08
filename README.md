@@ -82,11 +82,9 @@ The site should look aesthetically pleasing on all screens, giving the impressio
 
 Since different sections of a site adapt differently to screen widths, different breakpoints can be specified for each of them.
 
-
 ### Pictures
 #### SVG
 When possible, graphic elements (logo, icon, texture, shape, etc.) must be served in vector format (SVG) to ensure a clear rendering.
-
 
 #### WEBP
 Photos and images must be served in WEBP format.
@@ -94,8 +92,30 @@ Photos and images must be served in WEBP format.
 ### Fonts
 Whenever possible, the fonts used should be included in the theme for hosting on the server.
 
+
+## THEME INTERNATIONALIZATION
+All WordPress themes developed must be prepared for internationalization (i18n) using a translation template file in .pot (Portable Object Template) format.
+
+### Technical Requirements
+The .pot file must contain all translatable strings from the theme and be generated according to WordPress standards. All text strings displayed to users must be wrapped in appropriate WordPress translation functions:
+
+__() for simple strings
+_e() for direct output
+_n() for plural forms
+_x() for contextual translations
+
+### Required Structure
+The .pot file must be placed in the theme's /languages/ directory and named according to the convention theme-name.pot. It must include appropriate metadata (project name, version, text domain) and be compatible with standard translation tools like Poedit.
+
+### Text Domain
+A unique text domain must be defined for the theme and used consistently throughout all translation functions. This domain must correspond to the theme directory name.
+
+This approach ensures theme portability and allows users to easily create .po/.mo translation files for their target language.
+
+
 ## LICENSES
 TBD
+
 
 ## CODE REPOSITORY
 Code version control must be managed using a Git repository on GitHub. Developers are responsible for committing their code at regular intervals to ensure effective version control and, where applicable, facilitate collaboration.
@@ -103,6 +123,7 @@ Code version control must be managed using a Git repository on GitHub. Developer
 The code repository will be created by the agency.
 
 In some cases, the agency may contribute to the development of specific features, such as integrating tracking code. The developer will be notified accordingly.
+
 
 ## DEPLOYMENT
 All theme files are committed to the Git repository and manually uploaded to the production server. Currently, the agency does not use automatic deployment.
@@ -123,14 +144,15 @@ After development, the agency will be responsible for the following tasks:
 - Configuration and integration of Google Tag Manager
 - Configuration of Google Search Console
 - Configuration and integration of SMTP account
+- .pot file translation
 - Integration of Meta titles and Meta descriptions
 - Redirection of old URLs
 - Deployment of the website on the client's server
-
 
 ### Web developer
 The developer is responsible for the following tasks:
 - Programming the custom theme
 - Creating custom post types and fields
 - Integrating site content in the default language
+- Theme internationalization
 - Performance optimization
