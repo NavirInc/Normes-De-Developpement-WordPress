@@ -99,10 +99,10 @@ All WordPress themes developed must be prepared for internationalization (i18n) 
 ### Technical Requirements
 The .pot file must contain all translatable strings from the theme and be generated according to WordPress standards. All text strings displayed to users must be wrapped in appropriate WordPress translation functions:
 
-__() for simple strings
-_e() for direct output
-_n() for plural forms
-_x() for contextual translations
+- __() for simple strings
+- _e() for direct output
+- _n() for plural forms
+- _x() for contextual translations
 
 ### Required Structure
 The .pot file must be placed in the theme's /languages/ directory and named according to the convention theme-name.pot. It must include appropriate metadata (project name, version, text domain) and be compatible with standard translation tools like Poedit.
