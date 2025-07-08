@@ -35,6 +35,7 @@ The *style.scss* file must be placed in the *src/scss/* folder. The file is then
 ```sass src/scss/style.scss style.min.css --style=compressed --no-source-map```
 
 You can also watch changes using this command.
+
 ```sass --watch src/scss/style.scss:style.css --style=compressed --no-source-map```
 
 > [!NOTE]
